@@ -212,6 +212,7 @@ kubectl apply -f game-deployment.yaml
 kubectl apply -f game-service.yaml
 kubectl apply -f ingress.yaml
 ```
+![image](https://github.com/user-attachments/assets/e58361a0-3632-467c-8ef3-88ae3da4c785)
 
 ## **Step 6: Accessing the Applications**
 Find the **Load Balancer DNS** by running:
