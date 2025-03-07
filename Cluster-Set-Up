@@ -1,0 +1,7 @@
+# Create an EKS cluster
+eksctl create cluster --name my-cluster --region us-east-1 --nodegroup-name my-nodes --nodes 2
+
+# Add Helm repo and install Nginx Ingress Controller
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+helm install nginx-ingress ingress-nginx/ingress-nginx --namespace ingress-nginx --create-namespace
